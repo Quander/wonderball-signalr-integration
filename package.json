@@ -1,0 +1,22 @@
+{
+  "name": "wonderball-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "rimraf ./dist/* && tsc -b tsconfig.json",
+    "watch": "tsc -b -w tsconfig.json",
+    "dev": "tsc-watch --onSuccess \"node ./dist/app.js\""
+  },
+  "dependencies": {
+    "@microsoft/signalr": "^6.0.3",
+    "dotenv": "^16.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.23",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.7.0",
+    "tsc-watch": "^5.0.2",
+    "typescript": "^4.6.3"
+  }
+}
